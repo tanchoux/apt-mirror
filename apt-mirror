@@ -826,7 +826,7 @@ sub process_index
         }
         else
         {    # Sources index
-            foreach ( split( /\n/, $lines{"Files:"} ) )
+            foreach ( split( /\n/, $lines{"Checksums-Sha256:"} ) )
             {
                 next if $_ eq '';
                 my @file = split;
